@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "aio-plugin",
+  "version": "${version}",
+  "name": "AioPlugin",
+  "description": "All in one",
+  "authors": [
+    "ixiaohei"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "aio_plugin.client.ixiaoheiClient"
+    ],
+    "main": [
+      "aio_plugin.ixiaohei"
+    ]
+  },
+  "mixins": [
+    "aio_plugin_mixin.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "fabric": "*",
+    "minecraft": "1.20.1",
+    "carpet": ">=1.4.112"
+  }
+}
